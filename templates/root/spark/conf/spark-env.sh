@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export AWS_ACCESS_KEY_ID={{spark_aws_access_key_id}}
+export AWS_SECRET_ACCESS_KEY={{spark_aws_secret_access_key}}
 export SPARK_LOCAL_DIRS="{{spark_local_dirs}}"
 
 # Standalone cluster options
