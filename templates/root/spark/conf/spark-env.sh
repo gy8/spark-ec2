@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
+# yolo
 export AWS_ACCESS_KEY_ID={{spark_aws_access_key_id}}
 export AWS_SECRET_ACCESS_KEY={{spark_aws_secret_access_key}}
+
+# use python2.7 instead of 2.6
+export PYSPARK_PYTHON=/usr/bin/python2.7
+
 export SPARK_LOCAL_DIRS="{{spark_local_dirs}}"
 
 # Standalone cluster options
